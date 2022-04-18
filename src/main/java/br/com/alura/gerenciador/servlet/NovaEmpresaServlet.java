@@ -19,7 +19,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class NovaEmpresaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	private final EmpresaDAO banco = new EmpresaDAO();
+	private final EmpresaDAO BANCO = new EmpresaDAO();
 
 	/**
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse
@@ -43,7 +43,7 @@ public class NovaEmpresaServlet extends HttpServlet {
 		
 		Empresa empresa = new Empresa(nomeEmpresa, dataEmpresaDate);
 		
-		banco.adicionarEmpresa(empresa);
+		BANCO.adicionarEmpresa(empresa);
 		
 //		request.getSession().setAttribute("empresa", empresa.getNome());
 		response.sendRedirect("lista-de-empresas");

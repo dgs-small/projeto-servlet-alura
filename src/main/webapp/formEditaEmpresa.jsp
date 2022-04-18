@@ -8,7 +8,7 @@
 <head>
 	<c:url value="/edita-empresa" var="EditaEmpresaServlet"/>
 	<meta charset="UTF-8">
-	<title>Cadastro</title>
+	<title>Editar</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,8 +21,8 @@
 		<label for="data">Data de Criação: <input type="text" name="data" id="data"value="<fmt:formatDate
 					value="${empresa.dataAbertura}" pattern="dd/MM/yyyy"/>">
 		</label>
-		
-		<button type="submit">Cadastrar</button>
+		<input type="hidden" value="${empresa.id}" name="id">
+		<button type="submit">Enviar</button>
 		
 	</form>
 </body>
