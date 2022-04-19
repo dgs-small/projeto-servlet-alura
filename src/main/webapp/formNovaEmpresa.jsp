@@ -6,14 +6,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Cadastro</title>
-<c:url value="/novaEmpresa" var="NovaEmpresaServlet"/>
-<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Cadastro</title>
+	<c:url value="/entrada?acao=NovaEmpresa" var="UnicaEntradaServlet"/>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<h1>Cadastro de Empresas</h1>
-	<form action="${NovaEmpresaServlet}" method="POST">
+	<form action="${UnicaEntradaServlet}" method="POST">
 		<label for="nome">Nome: <input type="text" name="nome"
 			id="nome" placeholder="nome da empresa"></label> 
 		<label for="data">

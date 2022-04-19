@@ -1,10 +1,8 @@
-package br.com.alura.gerenciador.persistence;
+package br.com.alura.gerenciador.model;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import br.com.alura.gerenciador.model.Empresa;
 
 public class EmpresaDAO {
 	
@@ -28,7 +26,6 @@ public class EmpresaDAO {
 	
 	//Utilizando um Iterator, remove uma empresa da lista usando a chave identificadora "id"
 	public void removerEmpresa(Integer id) {
-	
 		for (Iterator<Empresa> iterator = lista.iterator(); iterator.hasNext();) {
 			Empresa empresa = iterator.next();
 			if (id == empresa.getId()) {

@@ -6,14 +6,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<c:url value="/edita-empresa" var="EditaEmpresaServlet"/>
+	<c:url value="/entrada?acao=EditaEmpresa" var="EntradaServlet"/>
 	<meta charset="UTF-8">
 	<title>Editar</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<h1>Edite a Empresa</h1>
-	<form action="${EditaEmpresaServlet}" method="POST">
+	<form action="${EntradaServlet}" method="POST">
 	
 		<label for="nome">Nome: <input type="text" name="nome"
 			id="nome" value="${empresa.nome}"></label> 
